@@ -1,0 +1,74 @@
+### JavaScript Super Short Notes  
+
+#### **Basics**  
+- **Variables:** `let`, `const`, `var`  
+- **Data Types:** String, Number, Boolean, Object, Array, Null, Undefined  
+- **Operators:** `+`, `-`, `*`, `/`, `%`, `&&`, `||`, `!`, `==`, `===`  
+
+#### **Functions**  
+```js
+function greet(name) { return "Hello " + name; }
+const greet = (name) => `Hello ${name}`;
+```
+
+#### **Loops**  
+```js
+for(let i=0; i<5; i++) { console.log(i); }
+while(condition) { /* code */ }
+```
+
+#### **Conditional Statements**  
+```js
+if (a > b) {} else if (a == b) {} else {}
+```
+
+#### **Objects & Arrays**  
+```js
+let obj = { name: "John", age: 30 };
+let arr = [1, 2, 3];
+console.log(obj.name, arr[0]);
+```
+
+#### **ES6 Features**  
+- Template Literals: `` `Hello ${name}` ``
+- Destructuring:  
+  ```js
+  let {name, age} = obj;
+  let [a, b] = arr;
+  ```
+- Spread Operator: `let newArr = [...arr, 4];`  
+- Default Parameters:  
+  ```js
+  function sum(a=5, b=10) { return a+b; }
+  ```
+
+#### **DOM Manipulation**  
+```js
+document.getElementById("id").innerHTML = "Hello";
+document.querySelector(".class").style.color = "red";
+```
+
+#### **Events**  
+```js
+element.addEventListener("click", function() { alert("Clicked!"); });
+```
+
+#### **Promises & Async/Await**  
+```js
+fetch(url).then(res => res.json()).then(data => console.log(data));
+async function getData() { let res = await fetch(url); }
+```
+
+#### **Local Storage**  
+```js
+localStorage.setItem("key", "value");
+console.log(localStorage.getItem("key"));
+```
+
+#### **JSON Handling**  
+```js
+let obj = JSON.parse('{"name":"John"}');
+let str = JSON.stringify(obj);
+```
+
+Want a deeper dive into any topic? 🚀
